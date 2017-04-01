@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>weather</title>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome/css/font-awesome.css">
+
+</head>
+<body>
+<div class="nav-ara1">
+<div class="container">
+<div class="nav-area">
+ <ul class="nav navbar-nav fixed-nav">
+  <li><a href="#sec1">Home</a></li>
+  <li><a href="#sec2">Isotope</a></li>
+  <li><a href="#sec3">Animate</a></li>
+  <li><a href="#sec4">slider</a></li>
+   
+ </ul>
+ </div> 
+</div>
+</div>
+<div id="sec1">
+<img src="assets/images/41.jpg" class="img-responsive" alt="image">
+ 
+
+  
+</div>
+<div id="sec2" data-js="hero-demo">
+  <div class="container-fluid">
+   <div class="row">
+    <div class="isotop-sec">
+     <div class="isotop-button">
+      <div class="list-inline filters">
+       <button type="button" class="btn btn-danger" data-filter="*">Show all</button>
+        <button type="button" class="btn btn-danger" data-filter=".home">Home</button>
+         <button type="button" class="btn btn-danger" data-filter=".manu">Manu</button>
+          <button type="button" class="btn btn-danger" data-filter=".contact">Contact Us</button>
+        
+       </div> 
+      </div>
+     <div class="isotop-img grid">
+     <div class="col-sm-3 element-item manu">
+      <div class="thumnail">
+       <img src="assets/images/22.png" class="img-responsive" alt=" gallery-image">
+        
+      </div>
+     </div>
+    <div class="col-sm-3 element-item home contact ">
+      <div class="thumnail">
+       <img src="assets/images/23.jpg" class="img-responsive" alt="gallery-image">
+     </div>
+    </div>
+     <div class="col-sm-3 element-item home contact">
+      <div class="thumnail">
+       <img src="assets/images/41.jpg" class="img-responsive" alt="gallery-image">
+        
+      </div>
+       
+     </div>
+     <div class="col-sm-3 element-item manu ">
+      <div class="thumnail">
+       <img src="assets/images/21.jpg" class="img-responsive" alt="gallery-image">
+        
+      </div>
+       
+     </div>
+     </div>
+      
+    </div>
+   </div>
+ </div>
+</div>
+
+<div id="sec3">
+ <div class="container">
+ <div class="anima-text">
+  <div class="col-sm-4">
+   <h2 class="bounceInUp wow" >Animation Show</h2>
+  </div>
+  <div class="col-sm-4" data-wow-offset="10"  data-wow-iteration="10">
+   <p class="bounce wow">Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+  </div>
+ </div>
+ </div>
+ </div>
+</div>
+
+<div id="sec4"> 
+ <div class="container-fluid">
+ <div class="swiper-container">
+ <div class="swiper-wrapper">
+  <div class="swiper-slide">
+   <img src="assets/images/33.jpg" class="img-responsive" alt="slider-image">
+    
+  </div>
+  <div class="swiper-slide">
+   <img src="assets/images/23.jpg" class="img-responsive" alt="slider-image">
+    
+  </div>
+  <div class="swiper-slide">
+   <img src="assets/images/22.png" class="img-responsive" alt="slider-image">
+    
+  </div>
+  <div class="swiper-slide">
+   <img src="assets/images/41.jpg" class="img-responsive" alt="slider-image">
+    
+  </div>
+  <div class="swiper-slide">
+   <img src="assets/images/44.jpg" class="img-responsive" alt="slider-image">
+    
+  </div>
+   </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+ </div>
+ </div>
+
+<div class="container">
+  <div class="footer">
+   <span><a href="#sec1" class="array"><i class="fa fa-arrow-up" aria-hidden="true"></i></span></a>
+  </div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="assets/css/jquery.easing.js"></script>
+<script src="assets/css/isotope-docs.min.js"></script>
+<script src="assets/css/jquery.nicescroll.min.js"></script>
+<script src="assets/css/wow.min.js"></script>
+<script src="assets/css/swiper.jquery.min.js"></script>
+<script>
+  $(function() {
+       /***slider***/
+       var swiper = new Swiper(".swiper-container",{
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+       });
+
+       /***wow-js***/
+        new WOW().init();
+        /***nice-scroll***/
+         $("html").niceScroll();  
+       /***easing-***/
+    $('.nav li a,.array').bind('click', function(event) {
+        var $anchor=$(this);
+        $('html, body').stop().animate( {
+            scrollTop: $($anchor.attr('href')).offset().top
+        }
+        , 1500, 'easeOutBounce');
+        event.preventDefault();
+    }
+    );
+    /***easing-***/
+
+
+}
+
+);
+</script>
+</body>
+</html>

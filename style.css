@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Nunito');
+body {
+    
+    font-family: 'Nunito', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+    
+}
+
+/***background-section***/
+#sec2, #sec1, #sec3, #sec4{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#sec1{
+    background:rgb(3, 45, 6);
+
+}
+#sec2{
+    background: #d2d2d2;
+    height:600px;
+    
+}
+
+#sec3{
+    background: rgb(35, 37, 36);
+    height:600px;
+   
+}
+   /***background-section***/
+
+   /***animate text***/
+
+.anima-text p, h2{
+    margin-top: 100px;
+     color: white;
+
+}
+  /***animate text***/
+
+   
+#sec4{
+    background: #2d2d2d;
+    position: relative;
+}
+
+   /***navbar***/
+#nav-ara1{
+    background:rgb(3, 45, 6); 
+   
+}
+.nav-area .nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    float: right;
+    margin: 10px;
+    position: fixed;
+    z-index:2;
+
+}
+.nav-area .navbar-nav>li {
+    float: left;
+    margin-right: 20px;
+    background: #111065;
+}
+.nav-area .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #2d2cc3;
+}
+.nav-area .navbar-nav>li>a {
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    border-radius: 0px;
+}
+.nav-ara1{
+    background:rgb(3, 45, 6);
+}
+
+ /***navbar***/
+
+ /***isotop-area***/
+.isotop-button {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+.isotop-button .btn-danger:hover{
+    background-color: #098abf;
+    border-color: #098abf;
+    color: white;
+}
+.isotop-button .btn-danger {
+    color: #b5b5b5;
+    background-color: #285568;
+    border-color: #285568;
+    border-radius: 0px;
+    margin-right: 10px;
+    font-size: 18px;
+     font-family: 'Bree Serif', serif;
+}
+ /***isotop-area***/
+
+
+ /***slider***/
+ .swiper-slide img.img-responsive {
+    height: 100vh;
+    width: 100%;
+    cursor: pointer;
+}
+.swiper-container .swiper-pagination-bullet {
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 0%;
+    opacity: 1;
+}
+.array {
+    float: right;
+    position: absolute;
+    top: 88%;
+    z-index: 2;
+    right: 10%;
+}
+.footer span i.fa.fa-arrow-up {
+    font-size: 25px;
+    color: rgb(26, 79, 232);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid white;
+}
+.footer span i.fa.fa-arrow-up:hover{
+    background:rgb(26, 79, 232);
+    border: 2px solid rgb(26, 79, 232);
+    color: white;
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 300px) and (max-width: 767px) { 
+  input{
+    margin-bottom: 20px;
+  }
+}
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  .isotop-button {
+    margin-bottom: 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+   
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+#sec2 {
+    background: #d2d2d2;
+    height: auto;
+}
+.nav-area .navbar-nav>li>a {
+    color: white;
+    text-transform: capitalize;
+    font-size: 14px;
+    border-radius: 0px;
+    padding: 5px 5px;
+}
+
+.nav-area .navbar-nav>li {
+    float: left;
+    margin-right: 8px;
+    background: #111065;
+}
+.isotop-button .btn-danger {
+    color: #b5b5b5;
+    background-color: #285568;
+    border-color: #285568;
+    border-radius: 0px;
+    margin-right: 5px;
+    font-size: 12px;
+    font-family: 'Bree Serif', serif;
+    padding: 5px 5px;
+}
+.isotop-sec {
+    margin-top: -75px;
+}
+
+  .nav-area .nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    float: right;
+    margin: 10px;
+    position: absolute;
+    z-index: 2;
+}
+#sec3 {
+    background: rgb(35, 37, 36);
+    height: 389px;
+}
+.swiper-slide img.img-responsive {
+    height: 42vh;
+    width: 100%;
+    cursor: pointer;
+}
+    
+}
